@@ -6,6 +6,7 @@ The code for evaluation is written seperately on Model directory, any futher imp
 
 1. Clone the Repository: `git clone https://github.com/AthithianV/Athithian---Dynamix-Task.git`.
 2. Change to directory: `cd Athithian---Dynamix-Task`.
-3. Build: `npm run build`.
-4. Start the Project: `npm start`.
-5. Visit: http://localhost:3000.
+3. Install Packages: `npm install`.
+4. Build: `npm run build`.
+5. Start the Project: `npm start`.
+6. Visit: http://localhost:3000.
