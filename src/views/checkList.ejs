@@ -1,0 +1,26 @@
+<h1>Evaluating Criteria: </h1>
+<form action="/" method="GET">
+    <input type="text" name="applicantId" placeholder="ApplicantId"/>
+    <button type="submit">Evaluate</button>
+</form>
+<div class="result-box">
+    <h4>ApplicantId: <%= applicantId %></h4>
+    <div class="criteria">
+        <div>
+            <span>Valuation Fee Paid:</span>
+            <i class="fa-solid <%= checkList && checkList.isValuationFeePaid?'fa-circle-check green':'fa-circle-xmark red' %>"></i>
+        </div>
+        <div>
+            <span>UK Resident:</span>
+            <i class="fa-solid <%= checkList && checkList.isUkResident?'fa-circle-check green':'fa-circle-xmark red' %>"></i>
+        </div>
+        <div>
+            <span>Risk Rating:</span>
+            <i class="fa-solid <%= checkList && checkList.riskRating?'fa-circle-check green':'fa-circle-xmark red' %>"></i>
+        </div>
+        <div>
+            <span>LTV Below 60%:</span>
+            <i class="fa-solid <%= checkList && checkList.loanToValue<60?'fa-circle-check green':'fa-circle-xmark red' %>"></i>
+        </div>
+    </div>
+</div>
